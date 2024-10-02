@@ -11,7 +11,7 @@ Over the last few years, dozens of healthcare surveys have shown a shortage of d
 
 ### Experiments
 
-#### (a) main file  : /src/dialogue_system/run/run.py
+#### (a) main file  : Code/src/dialogue_system/run/run.py
 
 For DQN based dialogue agents :
 
@@ -24,7 +24,7 @@ For DDQN based dialogue agents :
 
 #### (b) For different varients of A-SIDDS
 
-There are 6 different varients of dialogue manager in dialogue_manager (src/dialogue_system/dialogue_manager)
+There are 6 different varients of dialogue manager in dialogue_manager (Code/src/dialogue_system/dialogue_manager)
 
 	1. A-SIDDS :    dialogue_manager_hrl (default)
 	2. A-SIDDS_AM : dialogue_manager_hrl_A-SIDDS_AM.py
