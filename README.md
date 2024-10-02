@@ -1,13 +1,13 @@
-## Association Guided Symptom Investigation and Diagnosis Dialogue System (A-SIDDS)
+# Symptoms are known by their companies: Towards Association guided Disease Diagnosis Assistant
 
-The repository contains code and dataset for research article titled 'Towards Symptom Assessment Guided Symptom Investigation and Disease Diagnosis' published at IEEE Transactions on Artificial Intelligence, 2023.
+The repository contains code and dataset for research article titled 'Symptoms are known by their companies: Towards Association guided Disease Diagnosis Assistant' published at BMC Bioinformatics (2022).
 
 ### Abstract
-Automatic Disease Diagnosis (ADD) has gained immense popularity and demand over the past few years, and it is emerging as an effective diagnostic assistant to doctors. Diagnosis assistants assist clinicians in conducting a thorough symptom investigation and identifying possible diseases. Doctors correctly diagnose patients by observing only a few symptoms in most cases, even though the diagnosed disease has numerous symptoms. Also, some common symptoms, such as fever and headache, usually emerge due to other symptoms, which do not play a major role in identifying suffering diseases. In this work, we investigate the role of symptom importance in disease diagnosis through several feature engineering techniques and propose a novel symptom assessment incorporated symptom investigation and disease diagnosis (SA-SIDD) assistant using hierarchical reinforcement learning. The proposed SA-SIDD assistant first collects an adequate set of symptoms/sign information through conversing with users and then diagnoses a disease based on the extracted symptoms. We incorporated a symptom assessment module with the diagnosis framework that evaluates the relevance of current inspected symptom at each turn and reinforces the assistant to investigate distinctive and context-aligned symptoms using an assessment critic. The proposed methodology outperforms the state-of-the-art method, HRL, on two publicly available datasets, which firmly establishes the crucial role of symptom importance in disease diagnosis and the need for the proposed symptom assessment incorporated disease diagnosis framework. Furthermore, we have also conducted a human evaluation, revealing that the diagnosis method greatly enhances end-user satisfaction because of context-aligned relevant and minimal symptom investigation.
+Over the last few years, dozens of healthcare surveys have shown a shortage of doctors and an alarming doctor-population ratio. With the motivation of assisting doctors and utilizing their time efficiently, automatic disease diagnosis using artificial intelligence is experiencing an ever-growing demand and popularity. Humans are known by the company they keep; similarly, symptoms also exhibit the association property, i.e., one symptom may strongly suggest another symptom’s existence/non-existence, and their association provides crucial information about the suffering condition. The work investigates the role of symptom association in symptom investigation and disease diagnosis process. We propose and build a virtual assistant called Association guided Symptom Investigation and Diagnosis Assistant (A-SIDA) using hierarchical reinforcement learning. The proposed A-SIDDA converses with patients and extracts signs and symptoms as per patients’ chief complaints and ongoing dialogue context. We infused association-based recommendations and critic into the assistant, which reinforces the assistant for conducting context-aware, symptom-association guided symptom investigation. Following the symptom investigation, the assistant diagnoses a disease based on the extracted signs and symptoms. The assistant then diagnoses a disease based on the extracted signs and symptoms. In addition to diagnosis accuracy, the relevance of inspected symptoms is critical to the usefulness of a diagnosis framework. We also propose a novel evaluation metric called Investigation Relevance Score (IReS), which measures the relevance of symptoms inspected during symptom investigation. The obtained improvements (Diagnosis success rate-5.36%, Dialogue length-1.16, Match rate-2.19%, Disease classifier-6.36%, IReS-0.3501, and Human score-0.66) over state-of-the-art methods firmly establish the crucial role of symptom association that gets uncovered by the virtual agent. Furthermore, we found that the association guided symptom investigation greatly increases human satisfaction, owing to its seamless topic (symptom) transition.
 
-![Working](https://github.com/NLP-RL/A-SIDDS/blob/main/SASIDD.jpg)
+![Working](https://github.com/NLP-RL/A-SIDDS/blob/main/A-SIDD.jpg)
 
-#### Full Paper: https://www.computer.org/csdl/journal/ai/2023/06/10017134/1JU06Aq9Z2U
+#### Full Paper: https://link.springer.com/article/10.1186/s12859-022-05032-y
 
 ### Experiments
 
@@ -40,12 +40,15 @@ There are 6 different varients of dialogue manager in dialogue_manager (src/dial
 ## Citation Information 
 If you find this code useful in your research, please consider citing:
 ~~~~
-@article{tiwari2023towards,
-  title={Towards Symptom Assessment Guided Symptom Investigation and Disease Diagnosis},
-  author={Tiwari, Abhisek and Raj, Rishav and Saha, Sriparna and Bhattacharyya, Pushpak and Tiwari, Sarbajeet and Dhar, Minakshi},
-  journal={IEEE Transactions on Artificial Intelligence},
-  year={2023},
-  publisher={IEEE}
+@article{tiwari2022symptoms,
+  title={Symptoms are known by their companies: towards association guided disease diagnosis assistant},
+  author={Tiwari, Abhisek and Saha, Tulika and Saha, Sriparna and Bhattacharyya, Pushpak and Begum, Shemim and Dhar, Minakshi and Tiwari, Sarbajeet},
+  journal={BMC bioinformatics},
+  volume={23},
+  number={1},
+  pages={556},
+  year={2022},
+  publisher={Springer}
 }
 
 Please contact us @ abhisektiwari2014@gmail.com for any questions, suggestions, or remarks.
